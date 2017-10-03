@@ -1,19 +1,33 @@
+*, *::after {
+  box-sizing: border-box; /*-- sets box math for all elements --*/
+}
+
 body{
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
 img {
   width: 100%;
+  position: center;
 }
+
+
+card-title{
+  position: center;
+}
+
+
 /* holds all the cards. Makes them move when screen size changes*/
 .flex-container {
+  width: 25%;
+  height: 110%;
   flex-direction: row;
   flex-wrap: wrap;
   list-style: none;
   display: flex;
   align-items: center;
-  -webkit-flex-flow: row wrap;
+  -webkit-flex-flow: column wrap;
 justify-content: space-around;
 
 }
@@ -23,23 +37,27 @@ justify-content: space-around;
   border: 6px solid #dadada;
   padding: 5px;
   margin-top: 10px;
-  line-height: 90px;
   color: white;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 10px;
   height: 50%;
-  width: 60%;
+  width: 75%;
 }
 
 .card-text{
-  font-size: 14px;
+  font-size: 12px;
+  position: center;
+}
+
+.card-title{
+  font-size: 20px;
+  position: center;
 }
 
 .card-image { /*-- general styles for card images --*/
-  width: 50%;
-  height: auto;
+  width: 100%;
   /*background-size: cover;  /*-- sets images size to cover --*/*/
-  background-position: center center;  /*-- certers verically and horizontally --*/
+/*  position: center center;  /*-- certers verically and horizontally --*/
   transition: filter 0.3s ease-in;  /*-- sets filter transition speed and easing --*/
 }
 
@@ -47,21 +65,5 @@ justify-content: space-around;
   display: flex;  /*-- sets card-content wrapper to flex --*/
   flex: 1 1 auto;  /*-- sets flex-grow, flex-shrink, flex-basis values  --*/
   flex-direction: column; /*-- arranges children in a column  --*/
-  padding: .75rem;  /*-- adds good padding inside card content area --*/
-}
-
-/*.img01 {
-  background-image: url('pix/img01.jpg');
-}*/
-
-.img02 {
-  background-image: url('pix/img02.jpg');
-}
-
-.img03 {
-  background-image: url('pix/img03.jpg');
-}
-
-.img04 {
-  background-image: url('pix/img04.jpg');
+  padding: 1rem;  /*-- adds good padding inside card content area --*/
 }
