@@ -5,6 +5,7 @@
 body{
   width: 100%;
   margin: 0 auto;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 img {
@@ -28,19 +29,19 @@ card-title{
   display: flex;
   align-items: center;
   -webkit-flex-flow: column wrap;
-justify-content: space-around;
+  justify-content: space-around;
 
 }
 
 .card {
-  background: orange;
-  border: 6px solid #dadada;
+  background: #2D6E7F;
+  border: 5px solid #89BFCC;
   padding: 5px;
   margin-top: 10px;
   color: white;
   font-weight: bold;
   font-size: 10px;
-  height: 50%;
+  height: 55%;
   width: 75%;
 }
 
