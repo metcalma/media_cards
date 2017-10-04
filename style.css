@@ -44,16 +44,17 @@ card-title{
   height: 55%;
   width: 75%;
 }
-
-.card-text{
-  font-size: 12px;
-  position: center;
+.words{
+  text-align: center;
 }
-
 .card-title{
   font-size: 20px;
-  position: center;
 }
+.card-text{
+  font-size: 12px;
+
+}
+
 
 .card-image { /*-- general styles for card images --*/
   width: 100%;
