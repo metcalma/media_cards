@@ -1,7 +1,11 @@
 *, *::after {
   box-sizing: border-box; /*-- sets box math for all elements --*/
 }
-
+nav {
+  border: 1px solid #333;  /*-- adds a border to nav --*/
+  margin-bottom: 4em;  /*-- adds big bottom margin --*/
+  padding: .5em 0;  /*-- adds a little top and bottom padding --*/
+}
 body{
   width: 100%;
   margin: 0 auto;
@@ -14,45 +18,73 @@ img {
 }
 
 
-card-title{
+.card-title{
   position: center;
 }
-
+.main{
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  display: inline-block;
+}
+nav ul li {
+  display: inline-block; /*-- makes both lists horizontal --*/
+  padding-left: 5em; 
+}
 
 /* holds all the cards. Makes them move when screen size changes*/
 .flex-container {
-  width: 25%;
-  height: 110%;
   flex-direction: row;
   flex-wrap: wrap;
-  list-style: none;
   display: flex;
-  align-items: center;
-  -webkit-flex-flow: column wrap;
-  justify-content: space-around;
 
 }
 
 .card {
-  background: #2D6E7F;
-  border: 5px solid #89BFCC;
   padding: 5px;
   margin-top: 10px;
   color: white;
   font-weight: bold;
   font-size: 10px;
-  height: 55%;
-  width: 75%;
+}
+@media screen and (min-width: 550px) {
+  .card {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 33.333%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .card {
+    width: 25%;
+  }
+}
+
+.card-wrap{
+  background: #2D6E7F;
+  border: 5px solid #89BFCC;
+  padding: 10px 10px;
+
 }
 .words{
-  text-align: center;
 }
 .card-title{
+  text-align: center;
   font-size: 20px;
 }
 .card-text{
   font-size: 12px;
 
+}
+
+.card-btn {
+  text-transform: uppercase;  /*-- sets uppercase text --*/
+  font-size: .75rem;  /*-- smaller font size --*/
+  padding: .5rem;  /*-- a little internal space --*/
 }
 
 
